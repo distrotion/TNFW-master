@@ -26,7 +26,7 @@ router.get('/mongotest', async (req, res) => {
   
   // var output = await mongodb.insertMany("test","doc01",[{"data":2,"test":"haha"}]);
   // var output = await mongodb.find("test","doc01",{"data":2});
-  var upd = await mongodb.update("test","doc01",{ "data":2 }, { $set: { b: 1 } });
+  var upd = await mongodb.update("test","doc01",{ "data":2 }, { $set: { b: 777 } });
   var output = await mongodb.find("test","doc01",{"data":2});
   res.json(output)
 })
