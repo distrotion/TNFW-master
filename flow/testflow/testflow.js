@@ -82,9 +82,9 @@ router.post('/logindb',async (req,res) => {
  
 router.get('/testreq', async (req, res) => {
 
-    // data = {"test":"haha"}
-    // var output = await httpreq.post('http://127.0.0.1:7510/testpost',data)
-    var output = await httpreq.get('http://127.0.0.1:7510/testpost')
+    data = {"test":"haha"}
+    var output = await httpreq.post('http://127.0.0.1:7510/testpost',data)
+    // var output = await httpreq.get('http://127.0.0.1:7510/testpost')
     res.send(output)
 })
 
