@@ -88,6 +88,27 @@ router.get('/testreq', async (req, res) => {
     res.send(output)
 })
 
+
+function test(x){
+ 
+  x++
+
+  return x
+}
+
+router.get('/fntest', async (req, res) => {
+  out = test(1)
+  console.log(out)
+  console.log(out2)
+  res.send(`${out}`)
+})
+
+router.get('/fntest2', async (req, res) => {
+  out = test(2)
+  console.log(out)
+  res.send(`${out}`)
+})
+
 module.exports = router;
 
 //`SELECT * From [test].[dbo].[Table01]`

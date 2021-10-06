@@ -3,15 +3,15 @@ const router = express.Router();
 var mssql = require('./../../function/mssql');
 
 
-router.get('/flow002', async (req, res) => {
+router.get('/flow004', async (req, res) => {
 
-    res.json("testflow2");
+    res.json("testflow4");
 })
 
 //------------------------------------------------ user
 
-router.post('/user_update', (req, res) => {
-    console.log("-------- user_update --------");
+router.post('/user_delete', (req, res) => {
+    console.log("-------- user_delete --------");
     console.log(req.body);
     //------------------------>>>
 
@@ -22,8 +22,9 @@ router.post('/user_update', (req, res) => {
 })
 
 //------------------------------------------------ Custommer data
-router.post('/Custommer_data_update', (req, res) => {
-    console.log("-------- Custommer data_update --------");
+
+router.post('/Custommer_data_delete', (req, res) => {
+    console.log("-------- Custommer data_delete --------");
     console.log(req.body);
     //------------------------>>>
 
@@ -32,9 +33,11 @@ router.post('/Custommer_data_update', (req, res) => {
     output = [{ "status": "ok"}];
     res.json(output)
 })
+
 //------------------------------------------------ Frequency
-router.post('/Frequency_update', (req, res) => {
-    console.log("-------- Frequency_update --------");
+
+router.post('/Frequency_delete', (req, res) => {
+    console.log("-------- Frequency_delete --------");
     console.log(req.body);
     //------------------------>>>
 
@@ -43,9 +46,11 @@ router.post('/Frequency_update', (req, res) => {
     output = [{ "status": "ok"}];
     res.json(output)
 })
+
 //------------------------------------------------ Routine Customer
-router.post('/Routine_Customer_update', (req, res) => {
-    console.log("-------- Routine_Customer_update --------");
+
+router.post('/Routine_Customer_delete', (req, res) => {
+    console.log("-------- Routine_Customer_delete --------");
     console.log(req.body);
     //------------------------>>>
 
@@ -54,9 +59,11 @@ router.post('/Routine_Customer_update', (req, res) => {
     output = [{ "status": "ok"}];
     res.json(output)
 })
+
 //------------------------------------------------ GroupName
-router.post('/GroupName_update', (req, res) => {
-    console.log("-------- GroupName_update --------");
+
+router.post('/GroupName_delete', (req, res) => {
+    console.log("-------- GroupName_delete --------");
     console.log(req.body);
     //------------------------>>>
 
@@ -65,9 +72,11 @@ router.post('/GroupName_update', (req, res) => {
     output = [{ "status": "ok"}];
     res.json(output)
 })
+
 //------------------------------------------------ SampleType
-router.post('/SampleType_update', (req, res) => {
-    console.log("-------- SampleType_update --------");
+
+router.post('/SampleType_delete', (req, res) => {
+    console.log("-------- SampleType_delete --------");
     console.log(req.body);
     //------------------------>>>
 
@@ -76,9 +85,11 @@ router.post('/SampleType_update', (req, res) => {
     output = [{ "status": "ok"}];
     res.json(output)
 })
+
 //------------------------------------------------ SampleName
-router.post('/SampleName_update', (req, res) => {
-    console.log("-------- SampleName_update --------");
+
+router.post('/SampleName_delete', (req, res) => {
+    console.log("-------- SampleName_delete --------");
     console.log(req.body);
     //------------------------>>>
 
@@ -87,9 +98,11 @@ router.post('/SampleName_update', (req, res) => {
     output = [{ "status": "ok"}];
     res.json(output)
 })
+
 //------------------------------------------------ Tank
-router.post('/Tank_update', (req, res) => {
-    console.log("-------- Tank_update --------");
+
+router.post('/Tank_delete', (req, res) => {
+    console.log("-------- Tank_delete --------");
     console.log(req.body);
     //------------------------>>>
 
@@ -98,9 +111,11 @@ router.post('/Tank_update', (req, res) => {
     output = [{ "status": "ok"}];
     res.json(output)
 })
+
 //------------------------------------------------ Instrument
-router.post('/Instrument_update', (req, res) => {
-    console.log("-------- Instrument_update --------");
+
+router.post('/Instrument_delete', (req, res) => {
+    console.log("-------- Instrument_delete --------");
     console.log(req.body);
     //------------------------>>>
 
@@ -109,9 +124,11 @@ router.post('/Instrument_update', (req, res) => {
     output = [{ "status": "ok"}];
     res.json(output)
 })
+
 //------------------------------------------------ Unit
-router.post('/Unit_update', (req, res) => {
-    console.log("-------- Unit_update --------");
+
+router.post('/Unit_delete', (req, res) => {
+    console.log("-------- Unit_delete --------");
     console.log(req.body);
     //------------------------>>>
 
@@ -120,9 +137,11 @@ router.post('/Unit_update', (req, res) => {
     output = [{ "status": "ok"}];
     res.json(output)
 })
+
 //------------------------------------------------ item
-router.post('/item_update', (req, res) => {
-    console.log("-------- item_update --------");
+
+router.post('/item_delete', (req, res) => {
+    console.log("-------- item_delete --------");
     console.log(req.body);
     //------------------------>>>
 
@@ -131,9 +150,11 @@ router.post('/item_update', (req, res) => {
     output = [{ "status": "ok"}];
     res.json(output)
 })
+
 //------------------------------------------------ ItemGroup
-router.post('/ItemGroup_update', (req, res) => {
-    console.log("-------- ItemGroup_update --------");
+
+router.post('/ItemGroup_delete', (req, res) => {
+    console.log("-------- ItemGroup_delete --------");
     console.log(req.body);
     //------------------------>>>
 
@@ -144,8 +165,9 @@ router.post('/ItemGroup_update', (req, res) => {
 })
 
 //------------------------------------------------ Routine_MasterCustomer
-router.post('/Routine_MasterCustomer_update', (req, res) => {
-    console.log("-------- Routine_MasterCustomer_update --------");
+
+router.post('/Routine_MasterCustomer_delete', (req, res) => {
+    console.log("-------- Routine_MasterCustomer_delete --------");
     console.log(req.body);
     //------------------------>>>
 
@@ -156,8 +178,9 @@ router.post('/Routine_MasterCustomer_update', (req, res) => {
 })
 
 //------------------------------------------------ Routine_MasterLab
-router.post('/Routine_MasterLab_update', (req, res) => {
-    console.log("-------- Routine_MasterLab_update --------");
+
+router.post('/Routine_MasterLab_delete', (req, res) => {
+    console.log("-------- Routine_MasterLab_delete --------");
     console.log(req.body);
     //------------------------>>>
 
@@ -168,8 +191,9 @@ router.post('/Routine_MasterLab_update', (req, res) => {
 })
 
 //------------------------------------------------ Routine_MasterTS
-router.post('/Routine_MasterTS_update', (req, res) => {
-    console.log("-------- Routine_MasterTS_update --------");
+
+router.post('/Routine_MasterTS_delete', (req, res) => {
+    console.log("-------- Routine_MasterTS_delete --------");
     console.log(req.body);
     //------------------------>>>
 
