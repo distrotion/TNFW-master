@@ -18,49 +18,51 @@ router.post('/user_query', (req, res) => {
     let output_data = [{
  
         Id: "user",
-        Username: "01",
-        Password: "f3",
-        Name: "f4",
-        Section: "f5",
-        RoleId: "f6",
+        Username: "AA",
+        Password: "AA",
+        Name: "AA",
+        Section: "AA",
+        RoleId: "AA",
     },
     {
 
         Id: "02x",
-        Username: "01",
-        Password: "f3",
-        Name: "f4",
-        Section: "f5",
-        RoleId: "f6",
+        Username: "BB",
+        Password: "BB",
+        Name: "BB",
+        Section: "BB",
+        RoleId: "BB",
     },
     {
 
         Id: "03x",
-        Username: "01",
-        Password: "f3",
-        Name: "f4",
-        Section: "f5",
-        RoleId: "f6",
+        Username: "CC",
+        Password: "CC",
+        Name: "CC",
+        Section: "CC",
+        RoleId: "CC",
     },
     {
 
         Id: "04x",
-        Username: "01",
-        Password: "f3",
-        Name: "f4",
-        Section: "f5",
-        RoleId: "f6",
+        Username: "DD",
+        Password: "DD",
+        Name: "DD",
+        Section: "DD",
+        RoleId: "DD",
     },
     {
 
         Id: "05xxxxx",
-        Username: "01",
-        Password: "f3",
-        Name: "f4",
-        Section: "f5",
-        RoleId: "f6",
+        Username: "FF",
+        Password: "FF",
+        Name: "FF",
+        Section: "FF",
+        RoleId: "FF",
     }
     ];
+
+    
 
     // let dbinput = `[test].[dbo].[Table01]`;
     // let querystring  = `SELECT * From '${dbinput}' where [user]='${input.user}'`;
@@ -125,7 +127,7 @@ router.post('/Routine_Customer_query', (req, res) => {
     let output_data = [{
         Id: "Routine Customer",
         CustId: "f1",
-        CustFull: "f1",
+        CustFull: "FF",
         CustShort: "f2",
         Branch: "f2",
         Code: "f2",
