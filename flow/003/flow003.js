@@ -23,7 +23,7 @@ router.post('/user_insert', (req, res) => {
 
 //------------------------------------------------ Custommer data
 
-router.post('/Custommer_data_insert', (req, res) => {
+router.post('/Customer_Data_insert', (req, res) => {
     console.log("-------- Custommer data --------");
     console.log(req.body);
     //------------------------>>>
